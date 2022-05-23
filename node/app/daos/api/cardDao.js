@@ -4,6 +4,7 @@ const cardDao = {
     table: 'card',
 
     create: (req,res)=> {
+        console.log(req.body)
         if(Object.keys(req.body).length === 0) {
             res.json({
                 "error": true,
